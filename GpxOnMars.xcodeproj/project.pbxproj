@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1C941C4356F700C5B737 /* AppDelegate.swift */; };
+		A3FB1C971C4356F700C5B737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1C961C4356F700C5B737 /* ViewController.swift */; };
+		A3FB1C9A1C4356F700C5B737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C981C4356F700C5B737 /* Main.storyboard */; };
+		A3FB1C9C1C4356F700C5B737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */; };
+		A3FB1C9F1C4356F700C5B737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C9D1C4356F700C5B737 /* LaunchScreen.storyboard */; };
+		A3FB1CAA1C4356F700C5B737 /* GpxOnMarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CA91C4356F700C5B737 /* GpxOnMarsTests.swift */; };
+		A3FB1CB51C4356F700C5B737 /* GpxOnMarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CB41C4356F700C5B737 /* GpxOnMarsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3FB1CA61C4356F700C5B737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FB1C891C4356F700C5B737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3FB1C901C4356F700C5B737;
+			remoteInfo = GpxOnMars;
+		};
+		A3FB1CB11C4356F700C5B737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FB1C891C4356F700C5B737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3FB1C901C4356F700C5B737;
+			remoteInfo = GpxOnMars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3FB1C911C4356F700C5B737 /* GpxOnMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpxOnMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FB1C941C4356F700C5B737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3FB1C961C4356F700C5B737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3FB1C991C4356F700C5B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3FB1C9E1C4356F700C5B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3FB1CA01C4356F700C5B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FB1CA51C4356F700C5B737 /* GpxOnMarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpxOnMarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FB1CA91C4356F700C5B737 /* GpxOnMarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpxOnMarsTests.swift; sourceTree = "<group>"; };
+		A3FB1CAB1C4356F700C5B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FB1CB01C4356F700C5B737 /* GpxOnMarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpxOnMarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FB1CB41C4356F700C5B737 /* GpxOnMarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpxOnMarsUITests.swift; sourceTree = "<group>"; };
+		A3FB1CB61C4356F700C5B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3FB1C8E1C4356F700C5B737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FB1CA21C4356F700C5B737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FB1CAD1C4356F700C5B737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3FB1C881C4356F700C5B737 = {
+			isa = PBXGroup;
+			children = (
+				A3FB1C931C4356F700C5B737 /* GpxOnMars */,
+				A3FB1CA81C4356F700C5B737 /* GpxOnMarsTests */,
+				A3FB1CB31C4356F700C5B737 /* GpxOnMarsUITests */,
+				A3FB1C921C4356F700C5B737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3FB1C921C4356F700C5B737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB1C911C4356F700C5B737 /* GpxOnMars.app */,
+				A3FB1CA51C4356F700C5B737 /* GpxOnMarsTests.xctest */,
+				A3FB1CB01C4356F700C5B737 /* GpxOnMarsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FB1C931C4356F700C5B737 /* GpxOnMars */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB1C941C4356F700C5B737 /* AppDelegate.swift */,
+				A3FB1C961C4356F700C5B737 /* ViewController.swift */,
+				A3FB1C981C4356F700C5B737 /* Main.storyboard */,
+				A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */,
+				A3FB1C9D1C4356F700C5B737 /* LaunchScreen.storyboard */,
+				A3FB1CA01C4356F700C5B737 /* Info.plist */,
+			);
+			path = GpxOnMars;
+			sourceTree = "<group>";
+		};
+		A3FB1CA81C4356F700C5B737 /* GpxOnMarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB1CA91C4356F700C5B737 /* GpxOnMarsTests.swift */,
+				A3FB1CAB1C4356F700C5B737 /* Info.plist */,
+			);
+			path = GpxOnMarsTests;
+			sourceTree = "<group>";
+		};
+		A3FB1CB31C4356F700C5B737 /* GpxOnMarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB1CB41C4356F700C5B737 /* GpxOnMarsUITests.swift */,
+				A3FB1CB61C4356F700C5B737 /* Info.plist */,
+			);
+			path = GpxOnMarsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3FB1C901C4356F700C5B737 /* GpxOnMars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FB1CB91C4356F700C5B737 /* Build configuration list for PBXNativeTarget "GpxOnMars" */;
+			buildPhases = (
+				A3FB1C8D1C4356F700C5B737 /* Sources */,
+				A3FB1C8E1C4356F700C5B737 /* Frameworks */,
+				A3FB1C8F1C4356F700C5B737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GpxOnMars;
+			productName = GpxOnMars;
+			productReference = A3FB1C911C4356F700C5B737 /* GpxOnMars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3FB1CA41C4356F700C5B737 /* GpxOnMarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FB1CBC1C4356F700C5B737 /* Build configuration list for PBXNativeTarget "GpxOnMarsTests" */;
+			buildPhases = (
+				A3FB1CA11C4356F700C5B737 /* Sources */,
+				A3FB1CA21C4356F700C5B737 /* Frameworks */,
+				A3FB1CA31C4356F700C5B737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3FB1CA71C4356F700C5B737 /* PBXTargetDependency */,
+			);
+			name = GpxOnMarsTests;
+			productName = GpxOnMarsTests;
+			productReference = A3FB1CA51C4356F700C5B737 /* GpxOnMarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3FB1CAF1C4356F700C5B737 /* GpxOnMarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FB1CBF1C4356F700C5B737 /* Build configuration list for PBXNativeTarget "GpxOnMarsUITests" */;
+			buildPhases = (
+				A3FB1CAC1C4356F700C5B737 /* Sources */,
+				A3FB1CAD1C4356F700C5B737 /* Frameworks */,
+				A3FB1CAE1C4356F700C5B737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3FB1CB21C4356F700C5B737 /* PBXTargetDependency */,
+			);
+			name = GpxOnMarsUITests;
+			productName = GpxOnMarsUITests;
+			productReference = A3FB1CB01C4356F700C5B737 /* GpxOnMarsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3FB1C891C4356F700C5B737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Luda Zhuang";
+				TargetAttributes = {
+					A3FB1C901C4356F700C5B737 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2MPMZPBJ5Z;
+					};
+					A3FB1CA41C4356F700C5B737 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2MPMZPBJ5Z;
+						TestTargetID = A3FB1C901C4356F700C5B737;
+					};
+					A3FB1CAF1C4356F700C5B737 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2MPMZPBJ5Z;
+						TestTargetID = A3FB1C901C4356F700C5B737;
+					};
+				};
+			};
+			buildConfigurationList = A3FB1C8C1C4356F700C5B737 /* Build configuration list for PBXProject "GpxOnMars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3FB1C881C4356F700C5B737;
+			productRefGroup = A3FB1C921C4356F700C5B737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3FB1C901C4356F700C5B737 /* GpxOnMars */,
+				A3FB1CA41C4356F700C5B737 /* GpxOnMarsTests */,
+				A3FB1CAF1C4356F700C5B737 /* GpxOnMarsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3FB1C8F1C4356F700C5B737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FB1C9F1C4356F700C5B737 /* LaunchScreen.storyboard in Resources */,
+				A3FB1C9C1C4356F700C5B737 /* Assets.xcassets in Resources */,
+				A3FB1C9A1C4356F700C5B737 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FB1CA31C4356F700C5B737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FB1CAE1C4356F700C5B737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3FB1C8D1C4356F700C5B737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FB1C971C4356F700C5B737 /* ViewController.swift in Sources */,
+				A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FB1CA11C4356F700C5B737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FB1CAA1C4356F700C5B737 /* GpxOnMarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FB1CAC1C4356F700C5B737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FB1CB51C4356F700C5B737 /* GpxOnMarsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3FB1CA71C4356F700C5B737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3FB1C901C4356F700C5B737 /* GpxOnMars */;
+			targetProxy = A3FB1CA61C4356F700C5B737 /* PBXContainerItemProxy */;
+		};
+		A3FB1CB21C4356F700C5B737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3FB1C901C4356F700C5B737 /* GpxOnMars */;
+			targetProxy = A3FB1CB11C4356F700C5B737 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3FB1C981C4356F700C5B737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FB1C991C4356F700C5B737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3FB1C9D1C4356F700C5B737 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FB1C9E1C4356F700C5B737 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3FB1CB71C4356F700C5B737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3FB1CB81C4356F700C5B737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3FB1CBA1C4356F700C5B737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GpxOnMars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3FB1CBB1C4356F700C5B737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GpxOnMars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3FB1CBD1C4356F700C5B737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GpxOnMarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GpxOnMars.app/GpxOnMars";
+			};
+			name = Debug;
+		};
+		A3FB1CBE1C4356F700C5B737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GpxOnMarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GpxOnMars.app/GpxOnMars";
+			};
+			name = Release;
+		};
+		A3FB1CC01C4356F700C5B737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GpxOnMarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GpxOnMars;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A3FB1CC11C4356F700C5B737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GpxOnMarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GpxOnMars;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3FB1C8C1C4356F700C5B737 /* Build configuration list for PBXProject "GpxOnMars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FB1CB71C4356F700C5B737 /* Debug */,
+				A3FB1CB81C4356F700C5B737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FB1CB91C4356F700C5B737 /* Build configuration list for PBXNativeTarget "GpxOnMars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FB1CBA1C4356F700C5B737 /* Debug */,
+				A3FB1CBB1C4356F700C5B737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3FB1CBC1C4356F700C5B737 /* Build configuration list for PBXNativeTarget "GpxOnMarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FB1CBD1C4356F700C5B737 /* Debug */,
+				A3FB1CBE1C4356F700C5B737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3FB1CBF1C4356F700C5B737 /* Build configuration list for PBXNativeTarget "GpxOnMarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FB1CC01C4356F700C5B737 /* Debug */,
+				A3FB1CC11C4356F700C5B737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3FB1C891C4356F700C5B737 /* Project object */;
+}
