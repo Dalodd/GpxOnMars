@@ -44,23 +44,11 @@ class GPXConverter {
 
 extension GPXRoot {
     func saveTo(fileURL:NSURL) {
-        //save file
         print("Saving file at path: \(fileURL)")
-        // write gpx to file
-        var writeError: NSError?
-        let saved: Bool
         do {
             try self.gpx().writeToFile(fileURL.path!, atomically: true, encoding: NSUTF8StringEncoding)
-            saved = true
         } catch let error as NSError {
-            writeError = error
-            saved = false
+            print("[ERROR] GPXFileManager:save: \(error.localizedDescription)")
         }
-        if !saved {
-            if let error = writeError {
-                print("[ERROR] GPXFileManager:save: \(error.localizedDescription)")
-            }
-        }
-
     }
 }
