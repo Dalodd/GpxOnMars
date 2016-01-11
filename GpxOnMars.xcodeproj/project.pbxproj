@@ -16,6 +16,10 @@
 		A3FB1CAA1C4356F700C5B737 /* GpxOnMarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CA91C4356F700C5B737 /* GpxOnMarsTests.swift */; };
 		A3FB1CB51C4356F700C5B737 /* GpxOnMarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CB41C4356F700C5B737 /* GpxOnMarsUITests.swift */; };
 		A3FB1CC31C4358CB00C5B737 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1CC21C4358CB00C5B737 /* Podfile */; };
+		A3FB1CC51C43603A00C5B737 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CC41C43603A00C5B737 /* AppConfig.swift */; };
+		A3FB1CC81C43626200C5B737 /* LocationTranslater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CC71C43626200C5B737 /* LocationTranslater.swift */; };
+		A3FB1CCE1C43691500C5B737 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CCD1C43691500C5B737 /* File.swift */; };
+		A3FB1CD01C437EE200C5B737 /* GPXConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +55,12 @@
 		A3FB1CB01C4356F700C5B737 /* GpxOnMarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpxOnMarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB1CB41C4356F700C5B737 /* GpxOnMarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpxOnMarsUITests.swift; sourceTree = "<group>"; };
 		A3FB1CB61C4356F700C5B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3FB1CC21C4358CB00C5B737 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		A3FB1CC21C4358CB00C5B737 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3FB1CC41C43603A00C5B737 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A3FB1CC71C43626200C5B737 /* LocationTranslater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTranslater.swift; path = Helpers/LocationTranslater.swift; sourceTree = "<group>"; };
+		A3FB1CC91C4366EE00C5B737 /* GpxOnMars-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GpxOnMars-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3FB1CCD1C43691500C5B737 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Helpers/File.swift; sourceTree = "<group>"; };
+		A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXConverter.swift; sourceTree = "<group>"; };
 		FF51F6CB60798CB275D1EA05 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,12 +125,15 @@
 		A3FB1C931C4356F700C5B737 /* GpxOnMars */ = {
 			isa = PBXGroup;
 			children = (
+				A3FB1CC41C43603A00C5B737 /* AppConfig.swift */,
 				A3FB1C941C4356F700C5B737 /* AppDelegate.swift */,
 				A3FB1C961C4356F700C5B737 /* ViewController.swift */,
+				A3FB1CC61C43623700C5B737 /* Helpers */,
 				A3FB1C981C4356F700C5B737 /* Main.storyboard */,
 				A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */,
 				A3FB1C9D1C4356F700C5B737 /* LaunchScreen.storyboard */,
 				A3FB1CA01C4356F700C5B737 /* Info.plist */,
+				A3FB1CC91C4366EE00C5B737 /* GpxOnMars-Bridging-Header.h */,
 			);
 			path = GpxOnMars;
 			sourceTree = "<group>";
@@ -142,6 +154,16 @@
 				A3FB1CB61C4356F700C5B737 /* Info.plist */,
 			);
 			path = GpxOnMarsUITests;
+			sourceTree = "<group>";
+		};
+		A3FB1CC61C43623700C5B737 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB1CCD1C43691500C5B737 /* File.swift */,
+				A3FB1CC71C43626200C5B737 /* LocationTranslater.swift */,
+				A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		F46B3088DAF0CDBB83200D7B /* Frameworks */ = {
@@ -338,7 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FB1CCE1C43691500C5B737 /* File.swift in Sources */,
+				A3FB1CC81C43626200C5B737 /* LocationTranslater.swift in Sources */,
+				A3FB1CC51C43603A00C5B737 /* AppConfig.swift in Sources */,
 				A3FB1C971C4356F700C5B737 /* ViewController.swift in Sources */,
+				A3FB1CD01C437EE200C5B737 /* GPXConverter.swift in Sources */,
 				A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,10 +508,13 @@
 			baseConfigurationReference = 1C53FD627856D09DBADFE2A6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GpxOnMars/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GpxOnMars/GpxOnMars-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -494,10 +523,12 @@
 			baseConfigurationReference = 3DEF8E813936CB7518B1E736 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GpxOnMars/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GpxOnMars/GpxOnMars-Bridging-Header.h";
 			};
 			name = Release;
 		};
