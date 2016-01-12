@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		42DC22B7C41D52848AB79922 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF51F6CB60798CB275D1EA05 /* libPods.a */; };
 		A36A11931C44930400BEB6C1 /* GPXConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A11921C44930400BEB6C1 /* GPXConverter.swift */; };
+		A36A11BC1C44FE0400BEB6C1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A36A11BB1C44FE0400BEB6C1 /* README.md */; };
+		A36A11BE1C44FE0C00BEB6C1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A36A11BD1C44FE0C00BEB6C1 /* LICENSE */; };
 		A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1C941C4356F700C5B737 /* AppDelegate.swift */; };
 		A3FB1C9A1C4356F700C5B737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C981C4356F700C5B737 /* Main.storyboard */; };
 		A3FB1C9C1C4356F700C5B737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		1C53FD627856D09DBADFE2A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3DEF8E813936CB7518B1E736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A36A11921C44930400BEB6C1 /* GPXConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPXConverter.swift; path = Helpers/GPXConverter.swift; sourceTree = "<group>"; };
+		A36A11BB1C44FE0400BEB6C1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A36A11BD1C44FE0C00BEB6C1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A3FB1C911C4356F700C5B737 /* Gpx On Mars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gpx On Mars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB1C941C4356F700C5B737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB1C991C4356F700C5B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 		A3FB1C881C4356F700C5B737 = {
 			isa = PBXGroup;
 			children = (
+				A36A11BD1C44FE0C00BEB6C1 /* LICENSE */,
+				A36A11BB1C44FE0400BEB6C1 /* README.md */,
 				A3FB1CC21C4358CB00C5B737 /* Podfile */,
 				A3FB1C931C4356F700C5B737 /* GpxOnMars */,
 				A3FB1CA81C4356F700C5B737 /* GpxOnMarsTests */,
@@ -313,6 +319,7 @@
 				A3FB1C9C1C4356F700C5B737 /* Assets.xcassets in Resources */,
 				A3FB1CC31C4358CB00C5B737 /* Podfile in Resources */,
 				A3FB1C9A1C4356F700C5B737 /* Main.storyboard in Resources */,
+				A36A11BE1C44FE0C00BEB6C1 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +394,7 @@
 			files = (
 				A3FB1CCE1C43691500C5B737 /* File.swift in Sources */,
 				A3FB1CDA1C43F15700C5B737 /* OpenInActivity.swift in Sources */,
+				A36A11BC1C44FE0400BEB6C1 /* README.md in Sources */,
 				A3FB1CC81C43626200C5B737 /* LocationConverter.swift in Sources */,
 				A3FB1CD51C439F0100C5B737 /* ConvertViewController.swift in Sources */,
 				A36A11931C44930400BEB6C1 /* GPXConverter.swift in Sources */,
