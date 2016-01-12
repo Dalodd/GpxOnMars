@@ -9,7 +9,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="GpxOnMars" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Gpx_On_Mars" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -60,7 +60,7 @@
         <!--Convert View Controller-->
         <scene sceneID="qiW-Mg-5h1">
             <objects>
-                <viewController storyboardIdentifier="ConvertViewController" id="yiF-0G-jkI" customClass="ConvertViewController" customModule="GpxOnMars" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConvertViewController" id="yiF-0G-jkI" customClass="ConvertViewController" customModule="Gpx_On_Mars" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X4l-42-AAi"/>
                         <viewControllerLayoutGuide type="bottom" id="FBW-dZ-nbw"/>

@@ -23,7 +23,7 @@ class ConvertViewController: UIViewController, UIDocumentInteractionControllerDe
             if importedGPXFile.exists {
                 print(importedGPXFile.path)
                 let converter = GPXConverter()
-                self.convertedGPXFileURL = File.applicationDocumentsDirectory.URLByAppendingPathComponent("translated_" + importedGPXFile.fileName)
+                self.convertedGPXFileURL = File.applicationCacheDirectory.URLByAppendingPathComponent("translated_" + importedGPXFile.fileName)
                 if convertedGPXFileURL!.pathExtension != "gpx" {
                     convertedGPXFileURL!.URLByAppendingPathExtension("gpx")
                 }

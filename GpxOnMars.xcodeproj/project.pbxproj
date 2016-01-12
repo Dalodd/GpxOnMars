@@ -46,7 +46,7 @@
 		1C53FD627856D09DBADFE2A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3DEF8E813936CB7518B1E736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A36A11921C44930400BEB6C1 /* GPXConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPXConverter.swift; path = Helpers/GPXConverter.swift; sourceTree = "<group>"; };
-		A3FB1C911C4356F700C5B737 /* GpxOnMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpxOnMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FB1C911C4356F700C5B737 /* Gpx On Mars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gpx On Mars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB1C941C4356F700C5B737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB1C991C4356F700C5B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		A3FB1C921C4356F700C5B737 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3FB1C911C4356F700C5B737 /* GpxOnMars.app */,
+				A3FB1C911C4356F700C5B737 /* Gpx On Mars.app */,
 				A3FB1CA51C4356F700C5B737 /* GpxOnMarsTests.xctest */,
 				A3FB1CB01C4356F700C5B737 /* GpxOnMarsUITests.xctest */,
 			);
@@ -219,7 +219,7 @@
 			);
 			name = GpxOnMars;
 			productName = GpxOnMars;
-			productReference = A3FB1C911C4356F700C5B737 /* GpxOnMars.app */;
+			productReference = A3FB1C911C4356F700C5B737 /* Gpx On Mars.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A3FB1CA41C4356F700C5B737 /* GpxOnMarsTests */ = {
@@ -541,7 +541,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gpx On Mars";
 				SWIFT_OBJC_BRIDGING_HEADER = "GpxOnMars/GpxOnMars-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,7 +558,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gpx On Mars";
 				SWIFT_OBJC_BRIDGING_HEADER = "GpxOnMars/GpxOnMars-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
