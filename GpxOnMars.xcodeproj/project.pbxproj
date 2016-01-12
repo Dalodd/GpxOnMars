@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42DC22B7C41D52848AB79922 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF51F6CB60798CB275D1EA05 /* libPods.a */; };
+		A36A11931C44930400BEB6C1 /* GPXConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A11921C44930400BEB6C1 /* GPXConverter.swift */; };
 		A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1C941C4356F700C5B737 /* AppDelegate.swift */; };
 		A3FB1C9A1C4356F700C5B737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C981C4356F700C5B737 /* Main.storyboard */; };
 		A3FB1C9C1C4356F700C5B737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */; };
@@ -16,9 +17,8 @@
 		A3FB1CB51C4356F700C5B737 /* GpxOnMarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CB41C4356F700C5B737 /* GpxOnMarsUITests.swift */; };
 		A3FB1CC31C4358CB00C5B737 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1CC21C4358CB00C5B737 /* Podfile */; };
 		A3FB1CC51C43603A00C5B737 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CC41C43603A00C5B737 /* AppConfig.swift */; };
-		A3FB1CC81C43626200C5B737 /* LocationTranslater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CC71C43626200C5B737 /* LocationTranslater.swift */; };
+		A3FB1CC81C43626200C5B737 /* LocationConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CC71C43626200C5B737 /* LocationConverter.swift */; };
 		A3FB1CCE1C43691500C5B737 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CCD1C43691500C5B737 /* File.swift */; };
-		A3FB1CD01C437EE200C5B737 /* GPXConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */; };
 		A3FB1CD31C439EEA00C5B737 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CD21C439EEA00C5B737 /* MainViewController.swift */; };
 		A3FB1CD51C439F0100C5B737 /* ConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CD41C439F0100C5B737 /* ConvertViewController.swift */; };
 		A3FB1CD81C43DA8000C5B737 /* GPXActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CD71C43DA8000C5B737 /* GPXActivityItemProvider.swift */; };
@@ -45,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1C53FD627856D09DBADFE2A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3DEF8E813936CB7518B1E736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A36A11921C44930400BEB6C1 /* GPXConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPXConverter.swift; path = Helpers/GPXConverter.swift; sourceTree = "<group>"; };
 		A3FB1C911C4356F700C5B737 /* GpxOnMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpxOnMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB1C941C4356F700C5B737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB1C991C4356F700C5B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,10 +60,9 @@
 		A3FB1CB61C4356F700C5B737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3FB1CC21C4358CB00C5B737 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3FB1CC41C43603A00C5B737 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
-		A3FB1CC71C43626200C5B737 /* LocationTranslater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTranslater.swift; path = Helpers/LocationTranslater.swift; sourceTree = "<group>"; };
+		A3FB1CC71C43626200C5B737 /* LocationConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationConverter.swift; path = Helpers/LocationConverter.swift; sourceTree = "<group>"; };
 		A3FB1CC91C4366EE00C5B737 /* GpxOnMars-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GpxOnMars-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3FB1CCD1C43691500C5B737 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Helpers/File.swift; sourceTree = "<group>"; };
-		A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXConverter.swift; sourceTree = "<group>"; };
 		A3FB1CD21C439EEA00C5B737 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		A3FB1CD41C439F0100C5B737 /* ConvertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertViewController.swift; path = Controllers/ConvertViewController.swift; sourceTree = "<group>"; };
 		A3FB1CD71C43DA8000C5B737 /* GPXActivityItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPXActivityItemProvider.swift; path = Models/GPXActivityItemProvider.swift; sourceTree = "<group>"; };
@@ -166,9 +166,9 @@
 		A3FB1CC61C43623700C5B737 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A36A11921C44930400BEB6C1 /* GPXConverter.swift */,
 				A3FB1CCD1C43691500C5B737 /* File.swift */,
-				A3FB1CC71C43626200C5B737 /* LocationTranslater.swift */,
-				A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */,
+				A3FB1CC71C43626200C5B737 /* LocationConverter.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -387,11 +387,11 @@
 			files = (
 				A3FB1CCE1C43691500C5B737 /* File.swift in Sources */,
 				A3FB1CDA1C43F15700C5B737 /* OpenInActivity.swift in Sources */,
-				A3FB1CC81C43626200C5B737 /* LocationTranslater.swift in Sources */,
+				A3FB1CC81C43626200C5B737 /* LocationConverter.swift in Sources */,
 				A3FB1CD51C439F0100C5B737 /* ConvertViewController.swift in Sources */,
+				A36A11931C44930400BEB6C1 /* GPXConverter.swift in Sources */,
 				A3FB1CC51C43603A00C5B737 /* AppConfig.swift in Sources */,
 				A3FB1CD31C439EEA00C5B737 /* MainViewController.swift in Sources */,
-				A3FB1CD01C437EE200C5B737 /* GPXConverter.swift in Sources */,
 				A3FB1CD81C43DA8000C5B737 /* GPXActivityItemProvider.swift in Sources */,
 				A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */,
 			);
@@ -538,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GpxOnMars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -554,6 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GpxOnMars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
 				PRODUCT_NAME = "$(TARGET_NAME)";

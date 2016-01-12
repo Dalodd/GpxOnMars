@@ -323,6 +323,14 @@ extension File {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1]
     }()
+    static var applicationCacheDirectory: NSURL = {
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.CachesDirectory , inDomains: .UserDomainMask)
+        return urls[urls.count-1]
+    }()
+    static var applicationLibraryDirectory: NSURL = {
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.LibraryDirectory , inDomains: .UserDomainMask)
+        return urls[urls.count-1]
+    }()
 }
 
 extension String{

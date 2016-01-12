@@ -22,7 +22,7 @@
                                 <rect key="frame" x="20" y="562" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="yiF-0G-jkI" kind="presentation" identifier="showConverter" modalTransitionStyle="coverVertical" id="wuu-Ue-NjE"/>
+                                    <segue destination="yiF-0G-jkI" kind="presentation" identifier="showConverter" modalPresentationStyle="formSheet" modalTransitionStyle="coverVertical" id="wuu-Ue-NjE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教程" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5S-NR-YRD">
@@ -69,54 +69,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSq-uF-6E6">
-                                <rect key="frame" x="20" y="537" width="560" height="43"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
-                                <state key="normal" title="Convert"/>
-                                <connections>
-                                    <action selector="convertAction:" destination="yiF-0G-jkI" eventType="touchUpInside" id="Sbu-q2-1wQ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3c-gl-vle">
-                                <rect key="frame" x="20" y="40" width="560" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="DL4-m7-H2x"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHd-os-YMy">
-                                <rect key="frame" x="-5" y="556" width="605" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Lxg-MX-FFH"/>
-                                    <barButtonItem title="Share" id="wkQ-tE-ZIg"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fer-Ac-bNb"/>
-                                </items>
-                                <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </toolbar>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zlz-Gr-j22">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Jun-5H-6Vx">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHd-os-YMy">
+                                            <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                            <items>
+                                                <barButtonItem style="plain" systemItem="flexibleSpace" id="Lxg-MX-FFH"/>
+                                                <barButtonItem systemItem="action" id="wkQ-tE-ZIg"/>
+                                                <barButtonItem style="plain" systemItem="flexibleSpace" id="fer-Ac-bNb"/>
+                                            </items>
+                                            <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </toolbar>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3c-gl-vle">
+                                            <rect key="frame" x="0.0" y="22" width="600" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="4C6-Mw-JbF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="A3c-gl-vle" firstAttribute="top" secondItem="Jun-5H-6Vx" secondAttribute="top" constant="22" id="CzC-6H-EiG"/>
+                                        <constraint firstItem="A3c-gl-vle" firstAttribute="leading" secondItem="Jun-5H-6Vx" secondAttribute="leading" id="Vrn-uo-ipo"/>
+                                        <constraint firstAttribute="trailing" secondItem="A3c-gl-vle" secondAttribute="trailing" id="lAC-KJ-SN8"/>
+                                        <constraint firstItem="aHd-os-YMy" firstAttribute="leading" secondItem="Jun-5H-6Vx" secondAttribute="leading" id="orU-wq-PYN"/>
+                                        <constraint firstAttribute="bottom" secondItem="aHd-os-YMy" secondAttribute="bottom" id="rJ3-aA-jtj"/>
+                                        <constraint firstAttribute="trailing" secondItem="aHd-os-YMy" secondAttribute="trailing" id="vb4-Tl-I0m"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="aHd-os-YMy" secondAttribute="trailing" constant="-20" id="ER1-uq-NRo"/>
-                            <constraint firstItem="XSq-uF-6E6" firstAttribute="leading" secondItem="A3c-gl-vle" secondAttribute="leading" id="EbF-9b-jlS"/>
-                            <constraint firstItem="aHd-os-YMy" firstAttribute="leading" secondItem="9qN-oy-37d" secondAttribute="leadingMargin" constant="-25" id="HPO-Nq-8zU"/>
-                            <constraint firstItem="A3c-gl-vle" firstAttribute="top" secondItem="X4l-42-AAi" secondAttribute="bottom" constant="20" id="IeX-RX-3Vp"/>
-                            <constraint firstItem="XSq-uF-6E6" firstAttribute="leading" secondItem="9qN-oy-37d" secondAttribute="leadingMargin" id="JpG-zT-8Hh"/>
-                            <constraint firstItem="XSq-uF-6E6" firstAttribute="trailing" secondItem="9qN-oy-37d" secondAttribute="trailingMargin" id="TDI-Ql-mTm"/>
-                            <constraint firstItem="XSq-uF-6E6" firstAttribute="trailing" secondItem="A3c-gl-vle" secondAttribute="trailing" id="Xi1-7B-AAb"/>
-                            <constraint firstItem="FBW-dZ-nbw" firstAttribute="top" secondItem="aHd-os-YMy" secondAttribute="bottom" id="gpp-9h-gdz"/>
-                            <constraint firstItem="A3c-gl-vle" firstAttribute="leading" secondItem="9qN-oy-37d" secondAttribute="leadingMargin" id="rkJ-9v-ahE"/>
-                            <constraint firstItem="A3c-gl-vle" firstAttribute="trailing" secondItem="9qN-oy-37d" secondAttribute="trailingMargin" id="rw8-jA-hbg"/>
-                            <constraint firstItem="FBW-dZ-nbw" firstAttribute="top" secondItem="XSq-uF-6E6" secondAttribute="bottom" constant="20" id="s6k-FR-NWj"/>
+                            <constraint firstItem="FBW-dZ-nbw" firstAttribute="top" secondItem="Zlz-Gr-j22" secondAttribute="bottom" id="6Ch-0g-5L7"/>
+                            <constraint firstItem="Zlz-Gr-j22" firstAttribute="leading" secondItem="9qN-oy-37d" secondAttribute="leadingMargin" constant="-20" id="Ev0-HN-uCO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zlz-Gr-j22" secondAttribute="trailing" constant="-20" id="KJV-Bd-tWh"/>
+                            <constraint firstItem="Zlz-Gr-j22" firstAttribute="top" secondItem="9qN-oy-37d" secondAttribute="topMargin" id="Pt3-z3-hHF"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="JpG-zT-8Hh"/>
-                                <exclude reference="TDI-Ql-mTm"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="msgLabel" destination="A3c-gl-vle" id="gF0-X5-cZN"/>

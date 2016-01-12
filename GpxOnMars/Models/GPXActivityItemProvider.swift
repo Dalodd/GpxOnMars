@@ -12,7 +12,6 @@ class GPXActivityItemProvider: UIActivityItemProvider {
         return self.placeholderItem as! NSURL
     }
     override func activityViewController(activityViewController: UIActivityViewController, dataTypeIdentifierForActivityType activityType: String?) -> String {
-        print("activityType: \(activityType)")
         return "com.topografix.gpx"
     }
     
@@ -27,19 +26,5 @@ class GPXActivityItemProvider: UIActivityItemProvider {
     override func activityViewControllerPlaceholderItem(activityViewController: UIActivityViewController) -> AnyObject {
         return fileURL
     }
-    
-//    override func item() -> AnyObject {
-//        if self.placeholderItem is NSURL {
-//            do {
-//                let fileData = try NSData(contentsOfFile: (self.placeholderItem as! NSURL).path!, options: NSDataReadingOptions.MappedRead)
-//                return fileData
-//            } catch let error as NSError {
-//                print(error.localizedDescription)
-//            }
-//        }
-//        
-//        return placeholderItem!
-//        return fileURL
-//    }
     
 }
