@@ -8,11 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("viewDidLoad")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        print("viewDidAppear")
+        super.viewDidAppear(animated)
+        if AppConfig.gpxFileToConvert != nil {
+            self.performSegueWithIdentifier("showConverter", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {

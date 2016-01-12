@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		42DC22B7C41D52848AB79922 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF51F6CB60798CB275D1EA05 /* libPods.a */; };
 		A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1C941C4356F700C5B737 /* AppDelegate.swift */; };
-		A3FB1C971C4356F700C5B737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1C961C4356F700C5B737 /* ViewController.swift */; };
 		A3FB1C9A1C4356F700C5B737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C981C4356F700C5B737 /* Main.storyboard */; };
 		A3FB1C9C1C4356F700C5B737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */; };
 		A3FB1C9F1C4356F700C5B737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C9D1C4356F700C5B737 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,10 @@
 		A3FB1CC81C43626200C5B737 /* LocationTranslater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CC71C43626200C5B737 /* LocationTranslater.swift */; };
 		A3FB1CCE1C43691500C5B737 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CCD1C43691500C5B737 /* File.swift */; };
 		A3FB1CD01C437EE200C5B737 /* GPXConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */; };
+		A3FB1CD31C439EEA00C5B737 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CD21C439EEA00C5B737 /* MainViewController.swift */; };
+		A3FB1CD51C439F0100C5B737 /* ConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CD41C439F0100C5B737 /* ConvertViewController.swift */; };
+		A3FB1CD81C43DA8000C5B737 /* GPXActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CD71C43DA8000C5B737 /* GPXActivityItemProvider.swift */; };
+		A3FB1CDA1C43F15700C5B737 /* OpenInActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1CD91C43F15700C5B737 /* OpenInActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +47,6 @@
 		3DEF8E813936CB7518B1E736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A3FB1C911C4356F700C5B737 /* GpxOnMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpxOnMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB1C941C4356F700C5B737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3FB1C961C4356F700C5B737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3FB1C991C4356F700C5B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3FB1C9E1C4356F700C5B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,10 @@
 		A3FB1CC91C4366EE00C5B737 /* GpxOnMars-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GpxOnMars-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3FB1CCD1C43691500C5B737 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Helpers/File.swift; sourceTree = "<group>"; };
 		A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXConverter.swift; sourceTree = "<group>"; };
+		A3FB1CD21C439EEA00C5B737 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		A3FB1CD41C439F0100C5B737 /* ConvertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertViewController.swift; path = Controllers/ConvertViewController.swift; sourceTree = "<group>"; };
+		A3FB1CD71C43DA8000C5B737 /* GPXActivityItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPXActivityItemProvider.swift; path = Models/GPXActivityItemProvider.swift; sourceTree = "<group>"; };
+		A3FB1CD91C43F15700C5B737 /* OpenInActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenInActivity.swift; path = Models/OpenInActivity.swift; sourceTree = "<group>"; };
 		FF51F6CB60798CB275D1EA05 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,7 +133,8 @@
 			children = (
 				A3FB1CC41C43603A00C5B737 /* AppConfig.swift */,
 				A3FB1C941C4356F700C5B737 /* AppDelegate.swift */,
-				A3FB1C961C4356F700C5B737 /* ViewController.swift */,
+				A3FB1CD11C439EA800C5B737 /* Controllers */,
+				A3FB1CD61C43AAD900C5B737 /* Models */,
 				A3FB1CC61C43623700C5B737 /* Helpers */,
 				A3FB1C981C4356F700C5B737 /* Main.storyboard */,
 				A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */,
@@ -164,6 +171,24 @@
 				A3FB1CCF1C437EE200C5B737 /* GPXConverter.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A3FB1CD11C439EA800C5B737 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB1CD21C439EEA00C5B737 /* MainViewController.swift */,
+				A3FB1CD41C439F0100C5B737 /* ConvertViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A3FB1CD61C43AAD900C5B737 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB1CD91C43F15700C5B737 /* OpenInActivity.swift */,
+				A3FB1CD71C43DA8000C5B737 /* GPXActivityItemProvider.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		F46B3088DAF0CDBB83200D7B /* Frameworks */ = {
@@ -361,10 +386,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FB1CCE1C43691500C5B737 /* File.swift in Sources */,
+				A3FB1CDA1C43F15700C5B737 /* OpenInActivity.swift in Sources */,
 				A3FB1CC81C43626200C5B737 /* LocationTranslater.swift in Sources */,
+				A3FB1CD51C439F0100C5B737 /* ConvertViewController.swift in Sources */,
 				A3FB1CC51C43603A00C5B737 /* AppConfig.swift in Sources */,
-				A3FB1C971C4356F700C5B737 /* ViewController.swift in Sources */,
+				A3FB1CD31C439EEA00C5B737 /* MainViewController.swift in Sources */,
 				A3FB1CD01C437EE200C5B737 /* GPXConverter.swift in Sources */,
+				A3FB1CD81C43DA8000C5B737 /* GPXActivityItemProvider.swift in Sources */,
 				A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +543,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GpxOnMars/GpxOnMars-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -529,6 +558,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GpxOnMars/GpxOnMars-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

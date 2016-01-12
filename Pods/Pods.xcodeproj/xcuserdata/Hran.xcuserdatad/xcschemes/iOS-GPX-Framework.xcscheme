@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9CE641FCA63E4D3B71F0F751'
+               BlueprintIdentifier = '3303D6180C28FDAE3BD8CA68'
                BlueprintName = 'iOS-GPX-Framework'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libiOS-GPX-Framework.a'>

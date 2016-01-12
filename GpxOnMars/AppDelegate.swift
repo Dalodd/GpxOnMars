@@ -12,32 +12,33 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+//        self.initAppearance()
+//        self.window?.rootViewController = MainViewController(style: nil)
         // Override point for customization after application launch.
-        if let path = File.applicationDocumentsDirectory.path {
-            let file = File(path)
-            var gpxFileName = ""
-            for name in file.listFiles() {
-                if File(name).fileExtension == "gpx" {
-                    gpxFileName = name
-                }
-            }
-            let gpxPath = file.path + File.Sperator + gpxFileName
-            if File(gpxPath).exists {
-                print(gpxPath)
-                let converter = GPXConverter()
-                let fileURL: NSURL = File.applicationDocumentsDirectory.URLByAppendingPathComponent("translated_" + gpxFileName)
-                if fileURL.pathExtension != "gpx" {
-                    fileURL.URLByAppendingPathExtension("gpx")
-                }
-                converter.convertToMars(gpxPath).saveTo(fileURL)
-            } else {
-                print(gpxPath)
-            }
-        }
-        
+//        if let path = File.applicationDocumentsDirectory.path {
+//            let file = File(path)
+//            var gpxFileName = ""
+//            for name in file.listFiles() {
+//                if File(name).fileExtension == "gpx" {
+//                    gpxFileName = name
+//                }
+//            }
+//            let gpxPath = file.path + File.Sperator + gpxFileName
+//            if File(gpxPath).exists {
+//                print(gpxPath)
+//                let converter = GPXConverter()
+//                let fileURL: NSURL = File.applicationDocumentsDirectory.URLByAppendingPathComponent("translated_" + gpxFileName)
+//                if fileURL.pathExtension != "gpx" {
+//                    fileURL.URLByAppendingPathExtension("gpx")
+//                }
+//                converter.convertToMars(gpxPath).saveTo(fileURL)
+//            } else {
+//                print(gpxPath)
+//            }
+//        }
+        print("didFinishLaunchingWithOptions")
         return true
     }
 
@@ -63,7 +64,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        print("handleOpenURL")
+        AppConfig.gpxFileToConvert = url
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = storyboard.instantiateViewControllerWithIdentifier("MainViewController")
+        self.window?.rootViewController = mainVC
+        
+        
 
+        return true
+    }
 
 }
 
