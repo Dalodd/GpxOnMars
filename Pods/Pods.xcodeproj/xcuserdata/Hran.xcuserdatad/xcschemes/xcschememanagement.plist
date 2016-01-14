@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TBXML.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D442F5CFCA257E7385F9B85C767E740</key>
+		<key>5BD421DEDE728ADF8A0281B64C9B75E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>A8B4CEE5444509AFCC0E89D5DEDCD11F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCD0316CDF6CFFCF26C59E0C6DF545F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

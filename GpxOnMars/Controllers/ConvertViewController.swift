@@ -30,7 +30,7 @@ class ConvertViewController: UIViewController, UIDocumentInteractionControllerDe
                 converter.convertToMars(importedGPXFile.path).saveTo(convertedGPXFileURL!)
                 importedGPXFile.deleteFile()
                 AppConfig.gpxFileToConvert = nil
-                self.msgLabel.text = "Convert Completed"
+                self.msgLabel.text = "Convert Complete"
                 self.documentController = UIDocumentInteractionController(URL: convertedGPXFileURL!)
                 self.documentController.delegate = self
                 self.documentController.UTI = "com.topografix.gpx"

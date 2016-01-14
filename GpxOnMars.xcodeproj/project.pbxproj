@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		42DC22B7C41D52848AB79922 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF51F6CB60798CB275D1EA05 /* libPods.a */; };
+		636C061175D8743CC690974C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF51F6CB60798CB275D1EA05 /* libPods.a */; };
 		A36A11931C44930400BEB6C1 /* GPXConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A11921C44930400BEB6C1 /* GPXConverter.swift */; };
 		A36A11BC1C44FE0400BEB6C1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A36A11BB1C44FE0400BEB6C1 /* README.md */; };
 		A36A11BE1C44FE0C00BEB6C1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A36A11BD1C44FE0C00BEB6C1 /* LICENSE */; };
+		A3AC292D1C472DE4008F3DDB /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC292C1C472DE4008F3DDB /* ShareViewController.swift */; };
+		A3AC29301C472DE4008F3DDB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3AC292E1C472DE4008F3DDB /* MainInterface.storyboard */; };
+		A3AC29341C472DE4008F3DDB /* To Mars.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3AC292A1C472DE4008F3DDB /* To Mars.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3AC29431C473A5C008F3DDB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC29401C473A5C008F3DDB /* File.swift */; };
+		A3AC29441C473A5C008F3DDB /* GPXConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC29411C473A5C008F3DDB /* GPXConverter.swift */; };
+		A3AC29451C473A5C008F3DDB /* LocationConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC29421C473A5C008F3DDB /* LocationConverter.swift */; };
 		A3FB1C951C4356F700C5B737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB1C941C4356F700C5B737 /* AppDelegate.swift */; };
 		A3FB1C9A1C4356F700C5B737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C981C4356F700C5B737 /* Main.storyboard */; };
 		A3FB1C9C1C4356F700C5B737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB1C9B1C4356F700C5B737 /* Assets.xcassets */; };
@@ -27,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A3AC29321C472DE4008F3DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FB1C891C4356F700C5B737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3AC29291C472DE4008F3DDB;
+			remoteInfo = convertExtension;
+		};
 		A3FB1CA61C4356F700C5B737 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A3FB1C891C4356F700C5B737 /* Project object */;
@@ -43,12 +57,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A3AC29381C472DE4008F3DDB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A3AC29341C472DE4008F3DDB /* To Mars.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1C53FD627856D09DBADFE2A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3DEF8E813936CB7518B1E736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A36A11921C44930400BEB6C1 /* GPXConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPXConverter.swift; path = Helpers/GPXConverter.swift; sourceTree = "<group>"; };
 		A36A11BB1C44FE0400BEB6C1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A36A11BD1C44FE0C00BEB6C1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A3AC292A1C472DE4008F3DDB /* To Mars.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "To Mars.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3AC292C1C472DE4008F3DDB /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		A3AC292F1C472DE4008F3DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A3AC29311C472DE4008F3DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3AC29391C473135008F3DDB /* convertExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "convertExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3AC293D1C47318A008F3DDB /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		A3AC29401C473A5C008F3DDB /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Helpers/File.swift; sourceTree = "<group>"; };
+		A3AC29411C473A5C008F3DDB /* GPXConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPXConverter.swift; path = Helpers/GPXConverter.swift; sourceTree = "<group>"; };
+		A3AC29421C473A5C008F3DDB /* LocationConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationConverter.swift; path = Helpers/LocationConverter.swift; sourceTree = "<group>"; };
 		A3FB1C911C4356F700C5B737 /* Gpx On Mars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gpx On Mars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB1C941C4356F700C5B737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FB1C991C4356F700C5B737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +110,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A3AC29271C472DE4008F3DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636C061175D8743CC690974C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3FB1C8E1C4356F700C5B737 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,6 +152,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A3AC292B1C472DE4008F3DDB /* convertExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC293F1C473A51008F3DDB /* Helpers */,
+				A3AC292C1C472DE4008F3DDB /* ShareViewController.swift */,
+				A3AC292E1C472DE4008F3DDB /* MainInterface.storyboard */,
+				A3AC29311C472DE4008F3DDB /* Info.plist */,
+				A3AC29391C473135008F3DDB /* convertExtension-Bridging-Header.h */,
+			);
+			path = convertExtension;
+			sourceTree = "<group>";
+		};
+		A3AC293F1C473A51008F3DDB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A3AC29401C473A5C008F3DDB /* File.swift */,
+				A3AC29411C473A5C008F3DDB /* GPXConverter.swift */,
+				A3AC29421C473A5C008F3DDB /* LocationConverter.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		A3FB1C881C4356F700C5B737 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +183,7 @@
 				A3FB1C931C4356F700C5B737 /* GpxOnMars */,
 				A3FB1CA81C4356F700C5B737 /* GpxOnMarsTests */,
 				A3FB1CB31C4356F700C5B737 /* GpxOnMarsUITests */,
+				A3AC292B1C472DE4008F3DDB /* convertExtension */,
 				A3FB1C921C4356F700C5B737 /* Products */,
 				2B9C48AE47C87DFB5459EDE0 /* Pods */,
 				F46B3088DAF0CDBB83200D7B /* Frameworks */,
@@ -128,6 +196,7 @@
 				A3FB1C911C4356F700C5B737 /* Gpx On Mars.app */,
 				A3FB1CA51C4356F700C5B737 /* GpxOnMarsTests.xctest */,
 				A3FB1CB01C4356F700C5B737 /* GpxOnMarsUITests.xctest */,
+				A3AC292A1C472DE4008F3DDB /* To Mars.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +266,7 @@
 		F46B3088DAF0CDBB83200D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3AC293D1C47318A008F3DDB /* libPods.a */,
 				FF51F6CB60798CB275D1EA05 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -205,6 +275,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A3AC29291C472DE4008F3DDB /* convertExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3AC29371C472DE4008F3DDB /* Build configuration list for PBXNativeTarget "convertExtension" */;
+			buildPhases = (
+				685761EC58769D459B472D23 /* Check Pods Manifest.lock */,
+				A3AC29261C472DE4008F3DDB /* Sources */,
+				A3AC29271C472DE4008F3DDB /* Frameworks */,
+				A3AC29281C472DE4008F3DDB /* Resources */,
+				B6797CBA62D79A7285789CB6 /* Embed Pods Frameworks */,
+				6F2BC3438F4EF1F11C9502CC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = convertExtension;
+			productName = convertExtension;
+			productReference = A3AC292A1C472DE4008F3DDB /* To Mars.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A3FB1C901C4356F700C5B737 /* GpxOnMars */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3FB1CB91C4356F700C5B737 /* Build configuration list for PBXNativeTarget "GpxOnMars" */;
@@ -215,10 +305,12 @@
 				A3FB1C8F1C4356F700C5B737 /* Resources */,
 				5B3008689A31E080F5017ABC /* Embed Pods Frameworks */,
 				BB5892974BF49C768F379B32 /* Copy Pods Resources */,
+				A3AC29381C472DE4008F3DDB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A3AC29331C472DE4008F3DDB /* PBXTargetDependency */,
 			);
 			name = GpxOnMars;
 			productName = GpxOnMars;
@@ -271,6 +363,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Luda Zhuang";
 				TargetAttributes = {
+					A3AC29291C472DE4008F3DDB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2MPMZPBJ5Z;
+					};
 					A3FB1C901C4356F700C5B737 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 2MPMZPBJ5Z;
@@ -303,11 +399,20 @@
 				A3FB1C901C4356F700C5B737 /* GpxOnMars */,
 				A3FB1CA41C4356F700C5B737 /* GpxOnMarsTests */,
 				A3FB1CAF1C4356F700C5B737 /* GpxOnMarsUITests */,
+				A3AC29291C472DE4008F3DDB /* convertExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A3AC29281C472DE4008F3DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AC29301C472DE4008F3DDB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3FB1C8F1C4356F700C5B737 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +472,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		685761EC58769D459B472D23 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F2BC3438F4EF1F11C9502CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6797CBA62D79A7285789CB6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB5892974BF49C768F379B32 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +535,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A3AC29261C472DE4008F3DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AC292D1C472DE4008F3DDB /* ShareViewController.swift in Sources */,
+				A3AC29441C473A5C008F3DDB /* GPXConverter.swift in Sources */,
+				A3AC29431C473A5C008F3DDB /* File.swift in Sources */,
+				A3AC29451C473A5C008F3DDB /* LocationConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3FB1C8D1C4356F700C5B737 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +581,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A3AC29331C472DE4008F3DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3AC29291C472DE4008F3DDB /* convertExtension */;
+			targetProxy = A3AC29321C472DE4008F3DDB /* PBXContainerItemProxy */;
+		};
 		A3FB1CA71C4356F700C5B737 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A3FB1C901C4356F700C5B737 /* GpxOnMars */;
@@ -433,6 +599,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A3AC292E1C472DE4008F3DDB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3AC292F1C472DE4008F3DDB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		A3FB1C981C4356F700C5B737 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -452,6 +626,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A3AC29351C472DE4008F3DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C53FD627856D09DBADFE2A6 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = convertExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars.convertExtension;
+				PRODUCT_NAME = "To Mars";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "convertExtension/convertExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3AC29361C472DE4008F3DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DEF8E813936CB7518B1E736 /* Pods.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = convertExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.hran.GpxOnMars.convertExtension;
+				PRODUCT_NAME = "To Mars";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "convertExtension/convertExtension-Bridging-Header.h";
+			};
+			name = Release;
+		};
 		A3FB1CB71C4356F700C5B737 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -541,6 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GpxOnMars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,6 +770,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GpxOnMars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -619,6 +832,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A3AC29371C472DE4008F3DDB /* Build configuration list for PBXNativeTarget "convertExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3AC29351C472DE4008F3DDB /* Debug */,
+				A3AC29361C472DE4008F3DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3FB1C8C1C4356F700C5B737 /* Build configuration list for PBXProject "GpxOnMars" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

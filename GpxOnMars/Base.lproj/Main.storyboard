@@ -31,13 +31,13 @@
                                     <constraint firstAttribute="height" constant="60" id="QBl-3R-izK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="略" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-27-q4R">
                                 <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="71"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -82,7 +82,7 @@
                                                 <barButtonItem systemItem="action" id="wkQ-tE-ZIg"/>
                                                 <barButtonItem style="plain" systemItem="flexibleSpace" id="fer-Ac-bNb"/>
                                             </items>
-                                            <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </toolbar>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3c-gl-vle">
                                             <rect key="frame" x="0.0" y="22" width="600" height="60"/>
