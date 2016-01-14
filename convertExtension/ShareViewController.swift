@@ -43,12 +43,12 @@ class ShareViewController: UIViewController, UIDocumentInteractionControllerDele
                     } else {
                         SVProgressHUD.dismiss()
                         print(importedGPXFile.path)
-                        self.showAlert("\(importedGPXFile.path)")
+                        self.showFailedAlert("Gpx file is missing!")
                     }
                 } else {
                     SVProgressHUD.dismiss()
                     print(gpx)
-                    self.showAlert("\(gpx)")
+                    self.showFailedAlert("No gpx file found!")
                 }
             })
         }
@@ -59,7 +59,12 @@ class ShareViewController: UIViewController, UIDocumentInteractionControllerDele
             if let e = error {
                 print("Item loading error: \(e.localizedDescription)")
             }
-            let url = secureCodingData as? NSURL
+            var url = secureCodingData as? NSURL
+            if let pathExtension = url?.pathExtension?.lowercaseString {
+                if pathExtension != "gpx" {
+                    url = nil
+                }
+            }
             dispatch_async(dispatch_get_main_queue()) {
                 completionHandler(gpx: url)
             }
@@ -87,8 +92,13 @@ class ShareViewController: UIViewController, UIDocumentInteractionControllerDele
         }
     }
     
-    func showAlert(info: String) {
-        let alertController = UIAlertController(title: "Gpx Info", message: info, preferredStyle: UIAlertControllerStyle.Alert)
+    func showFailedAlert(info: String) {
+        let alertController = UIAlertController(title: "Gpx On Mars", message: info, preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: {action in
+            alertController.dismissViewControllerAnimated(true, completion: nil)
+            self.extensionContext?.completeRequestReturningItems(nil, completionHandler: nil)
+        })
+        alertController.addAction(okAction)
         self.presentViewController(alertController, animated: true, completion: nil)
     }
     func documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController) {
