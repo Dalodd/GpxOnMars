@@ -2,7 +2,7 @@
 //  ShareViewController.swift
 //  convertExtension
 //
-//  Created by 庄麓达 on 16/1/14.
+//  Created by Hran on 16/1/14.
 //  Copyright © 2016年 Luda Zhuang. All rights reserved.
 //
 

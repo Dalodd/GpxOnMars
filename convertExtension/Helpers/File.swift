@@ -2,7 +2,7 @@
 //  File.swift
 //  Photos
 //
-//  Created by 庄麓达 on 15/9/23.
+//  Created by Hran on 15/9/23.
 //  Copyright © 2015年 Luda Zhuang. All rights reserved.
 //
 

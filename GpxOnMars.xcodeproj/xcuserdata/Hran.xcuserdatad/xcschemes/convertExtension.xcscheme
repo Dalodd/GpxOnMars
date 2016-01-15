@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A3AC29291C472DE4008F3DDB"
-               BuildableName = "convertExtension.appex"
+               BuildableName = "To Mars.appex"
                BlueprintName = "convertExtension"
                ReferencedContainer = "container:GpxOnMars.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3AC29291C472DE4008F3DDB"
-            BuildableName = "convertExtension.appex"
+            BuildableName = "To Mars.appex"
             BlueprintName = "convertExtension"
             ReferencedContainer = "container:GpxOnMars.xcodeproj">
          </BuildableReference>
